@@ -1,6 +1,6 @@
 {
   "name": "autoproxy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A higher-order decorator to automatically proxy properties from the original function to the decorated one",
   "main": "autoproxy.js",
   "scripts": {
