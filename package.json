@@ -1,0 +1,23 @@
+{
+  "name": "autoproxy",
+  "version": "1.0.0",
+  "description": "A higher-order decorator to automatically proxy properties from the original function to the decorated one",
+  "main": "autoproxy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ide/autoproxy.git"
+  },
+  "keywords": [
+    "decorator",
+    "proxy"
+  ],
+  "author": "James Ide",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ide/autoproxy/issues"
+  },
+  "homepage": "https://github.com/ide/autoproxy#readme"
+}
