@@ -13,10 +13,9 @@ function autoproxy(decorator) {
 
 function proxyProperties(target, source) {
   var propertyNames = Object.getOwnPropertyNames(source);
-  for (var ii = 0; ii < propertyNames.length; ii++) {
-    var name = propertyNames[ii];
+  propertyNames.forEach(function(name) {
     if (name in target) {
-      continue;
+      return;
     }
 
     var descriptor = Object.getOwnPropertyDescriptor(source, name);
@@ -30,7 +29,7 @@ function proxyProperties(target, source) {
         source[name] = value;
       },
     });
-  }
+  });
 }
 
 module.exports = autoproxy;
