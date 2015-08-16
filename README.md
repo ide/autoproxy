@@ -3,6 +3,8 @@ A higher-order decorator to automatically proxy properties from the original fun
 
 ## How does autoproxy help?
 
+Autoproxy exposes a class' static and instance properties through a wrapper class.
+
 For example, a React component with Redux looks like this:
 ```js
 @connect(data => { size: data.layout.size })
@@ -34,7 +36,7 @@ class Root extends React.Component {
 }
 ```
 
-See how we need `WrappedComponent` and `getWrappedInstance()`? This is because the `connect` decorator defines Box to wrap the underlying class. As a result `Box.NUMBER_OF_SIDES` and `this._box.bounce` are both undefined.
+See how we need `WrappedComponent` and `getWrappedInstance()`? This is because the `connect` decorator wraps the underlying class and `Box` refers to the wrapper class. As a result `Box.NUMBER_OF_SIDES` and `this._box.bounce` are both undefined.
 
 ### With autoproxy
 
