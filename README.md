@@ -1,6 +1,8 @@
 # autoproxy
 A higher-order decorator to automatically proxy properties from the original function to the decorated one so that higher-order components don't get in the way.
 
+[![npm package](https://nodei.co/npm/autoproxy.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/autoproxy/)
+
 ## How does autoproxy help?
 
 Autoproxy exposes a class' static and instance properties through a wrapper class.
